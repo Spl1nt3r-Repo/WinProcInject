@@ -24,6 +24,12 @@ C:\> tasklist /v
 C:\> migrate.exe <PID>
 ```
 
+## Check if it worked
+
+```
+C:\> wmic process get processid,parentprocessid,executablepath|find "<PID PROCESS IN WHICH WE MIGRATED>"
+```
+
 ## References
 
 - https://resources.infosecinstitute.com/poor-mans-process-migration-windows/
